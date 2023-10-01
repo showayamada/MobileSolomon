@@ -57,7 +57,7 @@ Environments under Google Chrome Microsft edge is tested.
 [doc](https://drive.google.com/drive/folders/1lV-YDLYvJZB5AqQj5wB7CeNdzLcusUV9?usp=sharing)
 
 
-# モバイルe-ラーニング（モバイルソロモン）
+# 要約
 
 本webアプリケーションは、生成AIによる、教材の問題のヒント自動作成ができるアプリです。
 
