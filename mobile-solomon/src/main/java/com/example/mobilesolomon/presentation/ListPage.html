@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <style>
+        div {
+            text-align: center;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #444444;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #444444;
+            padding: 10px;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title> ListPage</title>
+</head>
+<body>
+<div>
+    <table>
+        <tr class="yellow">
+            <td>ID</td>
+            <td>問題</td>
+            <td>選択肢1</td>
+            <td>選択肢2</td>
+            <td>選択肢3</td>
+            <td>選択肢4</td>
+            <td>ヒント</td>
+        </tr>
+        <!-- 繰り返し箇所 start -->
+        <tr wicket:id="hintListView">
+            <td><span wicket:id="id"></span></td>
+            <td><span wicket:id="opt1"></span></td>
+            <td><span wicket:id="opt2"></span></td>
+            <td><span wicket:id="opt3"></span></td>
+            <td><span wicket:id="opt4"></span></td>
+            <td><span wicket:id="ans"></span></td>
+            <td><span wicket:id="hint"></span></td>
+        </tr>
+        <!-- 繰り返し箇所 end -->
+    </table>
+    <br />
+    <div wicket:id="navigator"></div>
+</div>
+
+<div>
+    <button onclick="location.href='#!'" wicket:id="toHome">Homeへ戻る</button>
+</div>
+</body>
+</html>
+

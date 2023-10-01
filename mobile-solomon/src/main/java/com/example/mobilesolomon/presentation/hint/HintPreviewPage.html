@@ -1,0 +1,29 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="utf-8">
+    <title>ヒント確認ページ</title>
+</head>
+<body>
+<p>内容を確認、修正し「内容確定」を押してください</p>
+<br>
+<span wicket:id="question"></span><br>
+<span wicket:id="option1"></span><br>
+<span wicket:id="option2"></span><br>
+<span wicket:id="option3"></span><br>
+<span wicket:id="option4"></span><br>
+<span wicket:id="answer"></span>
+
+
+<form wicket:id="textForm">
+    <textarea wicket:id="hint" cols="100" rows="20">初期値をここに表示</textarea>
+    <button wicket:id="submit">内容確定</button>
+</form>
+
+<div>
+    <button onclick="location.href='#!'" wicket:id="toHintMaker">一つ前の画面に戻る</button>
+</div>
+<div>
+    <button onclick="location.href='#!'" wicket:id="toHome">Homeまで戻る</button>
+</div>
+</body>
+</html>

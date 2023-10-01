@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.lv1-bar{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    margin: 5px;
+    background: url("../img/Bar/LV1Bar.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.lv2-bar{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    margin: 5px;
+    background: url("../img/Bar/LV2Bar.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.lv3-bar{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    margin: 5px;
+    background: url("../img/Bar/LV3Bar.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.lv4-bar{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    margin: 5px;
+    background: url("../img/Bar/LV4Bar.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.lv5-bar{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    margin: 5px;
+    background: url("../img/Bar/LV5Bar.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.lv6-bar{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    margin: 5px;
+    background: url("../img/Bar/LV6Bar.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.lv7-bar{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height:100%;
+    margin: 5px;
+    background: url("../img/Bar/LV7Bar.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}

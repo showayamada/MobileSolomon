@@ -1,0 +1,151 @@
+.menu-btn {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+    background-color: #444444;
+    color: #ffffff;
+}
+.menu-btn2{
+    height: 45px;
+    width: 80px;
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    background: #444444;
+    border: none;
+}
+
+
+.PageTittle{
+    position: absolute;
+    left: 80px;
+    font-size: 20px;
+}
+
+.left-test{
+    left: 30px !important;
+}
+
+.menu-btn2 span{
+    cotent:'';
+    display: block;
+    height: 4px;
+    width: 50%;
+    margin: 8px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/*【TODO】名前変えて！！！*/
+.Topborder{
+    transition: all .5s 0s ease;
+}
+.Middleborder{
+    transition: all .5s 0s ease;
+}
+.Bottomborder{
+    transition: all .5s 0s ease;
+}
+
+
+#menu-btn-check:checked ~ .menu-btn2 .Topborder{
+    transform: translateY(12px) rotate(45deg);
+    /*top:12px;*/
+    /*transform: rotate(-45deg) ;*/
+}
+#menu-btn-check:checked ~ .menu-btn2 .Middleborder{
+    transform: scale(0);
+/*background-color: rgba(255, 255, 255, 0);!*メニューオープン時は真ん中の線を透明にする*!*/
+}
+
+#menu-btn-check:checked ~ .menu-btn2 .Bottomborder{
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 250px;
+    height: 350px;
+    position: fixed;
+    top: 50px;
+    /*right: 100%;*/
+    left: 100%;
+    /*z-index: 0;*/
+    background-color: #444444;
+    /*transition: all 0.5s;*/
+    color: #ffffff;
+    /*border-top: solid 1px #ffffff;;*/
+}
+
+.menu-content span{
+    font-size: 14px;
+}
+.menu-content ul {
+    padding: 0px 10px 0;
+    border-top: solid 1px #ffffff;
+}
+.menu-content ul li {
+    border-bottom: solid 1px #ffffff;
+    list-style: none;
+}
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    box-sizing: border-box;
+    color:#ffffff;
+    text-decoration: none;
+    padding: 9px 15px 10px 0;
+    position: relative;
+}
+/*.menu-content ul li a::before {*/
+/*    content: "";*/
+/*    width: 7px;*/
+/*    height: 7px;*/
+/*    border-top: solid 2px #ffffff;*/
+/*    border-right: solid 2px #ffffff;*/
+/*    transform: rotate(45deg);*/
+/*    position: absolute;*/
+/*    right: 11px;*/
+/*    top: 16px;*/
+/*}*/
+a.Home:before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -3px 5px 0 0;
+    background: url("../img/Home.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    color: #ffffff;
+}
+a.SignOut:before{
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: -3px 5px 0 0;
+    background: url("../img/logOut.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+
+}
+
+#menu-btn-check:checked ~ .menu-content {
+    /*right: 87%;!*メニューを画面内へ*!*/
+    left: 0%;
+}

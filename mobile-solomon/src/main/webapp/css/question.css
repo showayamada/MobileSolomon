@@ -1,0 +1,245 @@
+/********** 問題番号の表 ***************************************************/
+#assetNumberContainer {
+    overflow: auto;
+    width: 100%;
+    padding: 0px;
+    margin-top: 3px;
+}
+
+#assetNumberContainer table {
+    table-layout: fixed;
+    border: solid 3px gray;
+    border-collapse: collapse;
+}
+
+#assetNumberTable tr {
+    /*border: dashed 2px gray; !* 線の種類（点線） 線の太さ　線の色*!*/
+    list-style-type: none !important;
+}
+
+#assetNumberTable tr:before {
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+}
+
+#assetNumberTable .assetNumberList {
+    border-bottom: dashed 2px gray;
+}
+
+#assetNumberTable td {
+    padding: 0px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#assetNumberTable td div {
+    width: 40px;
+    /*height: 52px;*/
+    padding: 10px 0px;
+    vertical-align: middle;
+}
+
+#assetNumberContainer #assetNumber {
+    color: #337ab7;
+    cursor: hand;
+}
+
+#assetNumberContainer #assetNumberContent {
+    display: table;
+}
+
+#assetNumberContainer #assetNumberContainerRight, #assetNumberContainer #assetNumberTable {
+    display: table-cell;
+}
+
+#assetNumberContainer #assetNumberContainerRight {
+    padding-right: 50px;
+}
+
+.explanation {
+    font-size: 12px;
+    line-height: 8px;
+}
+
+/*----------- テーブル -------------*/
+.table-border {
+    border: solid 1px black; /* 枠線指定 */
+}
+
+.table-th {
+    width: 50px;
+}
+
+table {
+    border-collapse: collapse; /* セルの線を重ねる */
+}
+
+/*----------- /テーブル -------------*/
+.return-btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF !important;
+    background: #888888;
+}
+
+.text-center {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*---------------枠------------------*/
+.box-size {
+    width: 185px;
+    height: 150px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.font-size-xx-large {
+    font-size: xx-large;
+}
+
+.vertical {
+    padding: 0.5em;
+    margin: 3px;
+    display: block;
+}
+
+@charset "UTF-8";
+/*不正解の時の画像*/
+#incorrect-img {
+    background: url("../img/incorrect.png") no-repeat;
+    width: 100px;
+    height: 80px;
+}
+
+/*正解の時の画像*/
+#correct-img {
+    background: url("../img/correct.png") no-repeat;
+    width: 80px;
+    height: 80px;
+}
+
+#button-container {
+    border-top: solid 2px #6091d3;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+#button-container #hintCountButton {
+    margin-left: 5px !important;
+}
+
+#question, #hint {
+    height: 300px;
+    overflow: scroll;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.text {
+    color: #FFFFFF !important;
+    font-size: 20px;
+    margin: 10px 35px;
+}
+
+/*「解答する」ボタン*/
+.box1 .btn-answer {
+    float: right;
+    margin: 0px !important;
+    box-sizing: border-box;
+}
+
+/*「ヒント」ボタン 「問題」ボタン*/
+.box1 .btn-hint .btn-question{
+    float: left;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    margin: 0px !important;
+    box-sizing: border-box;
+}
+.box1 .btn-hint :hover{
+    border-color: #ccc;
+}
+
+/*-----------問題文を囲う枠線-----------*/
+.box1 {
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #222222; /*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3; /*線*/
+    border-radius: 10px; /*角の丸み*/
+}
+.box1 p {
+    margin: 0;
+    padding: 0;
+}
+.box2 {
+    margin-top: 30px;
+}
+/* /問題文を囲う枠線ここまで */
+
+/* ----------スクロール---------- */
+/*文字などがあふれた場合に横スクロールを設定する*/
+.scroll {
+    width: 30%;
+    overflow-x: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    height: 10px; /* バーの太さ */
+}
+
+.scroll::-webkit-scrollbar-track {
+    background: #fff; /* バーの背景色 */
+    border-left: solid 1px #ececec;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: #ccc; /* バーの色 */
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 2px #fff;
+}
+
+/* /スクロールここまで */
+
+.blind-right {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #fefefe
+    90%);
+    width: 30%;
+    height: 95px;
+    right: 0px;
+    margin-top: -95px;
+    position: absolute;
+    pointer-events: none;
+}
+
+/* 青い枠とボタンの位置関係 　これってbootstrapの元々のcssなのでは？一応明示的に示してみたけど。*/
+.col-12{
+    float: left;
+}
+
+/* 正解・不正解のcss */
+#answer-feedback-container {
+    position: relative;
+}
+
+.pull-right{
+    float: right;
+}
+
+/* おまかせ */
+.review-button p {
+    margin: 1px 10px;
+}

@@ -1,0 +1,39 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <meta charset="utf-8">
+    <title>ヒント作成ページ</title>
+</head>
+<body>
+
+<h1>ヒントを作成する</h1>
+    <h2>操作1</h2>
+    <p>問題文を入力してください</p>
+    <form wicket:id="hintForm">
+        <textarea wicket:id="question" cols="100" rows="20"></textarea>
+        <h2>操作2</h2>
+        <p>回答の選択肢を入力してください</p>
+        ア<textarea wicket:id="option1" cols="50"></textarea><br>
+        イ<textarea wicket:id="option2" cols="50"></textarea><br>
+        ウ<textarea wicket:id="option3" cols="50"></textarea><br>
+        エ<textarea wicket:id="option4" cols="50"></textarea>
+        <h2>操作3</h2>
+        <p>正答を選択してください</p>
+            <RadioChoice wicket:id="answer" class="radio-choice">
+                <input type="radio"  name="opt" value="ア"> ア </input>
+                <input type="radio"  name="opt" value="イ"> イ </input>
+                <input type="radio"  name="opt" value="ウ"> ウ </input>
+                <input type="radio"  name="opt" value="エ"> エ </input>
+            </RadioChoice>
+        <br>
+        <br>
+        <p></p>
+        <p></p>
+        <button wicket:id="submit">ヒント自動生成</button>
+        <span wicket:id="feedback"></span>
+    </form>
+
+<p></p>
+<p></p>
+<button wicket:id="toHome">Homeへ戻る</button>
+</body>
+</html>

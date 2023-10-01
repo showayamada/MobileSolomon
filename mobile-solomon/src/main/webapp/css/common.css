@@ -1,0 +1,127 @@
+@media screen and (min-width: 768px) {
+    button.study {
+        padding: 0.5em 2em;
+        margin: 10px auto;
+        font-size: 20px;
+        display: inline-block;
+    }
+    button.study:before {
+        margin: -3px 10px 0 0;
+    }
+}
+
+.gray-text, .gray {
+    /*　↓文字だけ白にしている↓　*/
+    color: #FFFFFF !important;
+    background: #888888;
+}
+
+.text-center {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.light-blue td {
+    background: #DBF0F6;
+    cursor: pointer;
+}
+
+.light-red td {
+    background: #F9E2E5;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    button.nigate {
+        padding: 0.5em 2em;
+        margin: 10px auto;
+        font-size: 20px;
+        display: inline-block;
+    }
+    button.nigate:before {
+        margin: -3px 10px 0 0;
+    }
+}
+
+/*-------------配置-------------*/
+#selectChoiceExerciseLevel {
+    margin: 10px 0px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+.display-block{
+    display:block;
+}
+
+/*左寄せ*/
+.left {
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+/*右寄せ*/
+.right {
+    float: right;
+    margin: 5px;
+    padding: 5px;
+}
+
+#correctEvent, #incorrectEvent {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    right: 0px;
+    pointer-events: none;
+}
+
+/*次の問題へ・前の問題へのアイコンを中央寄せで表示する*/
+.next-Exercise :after {
+    border-radius: 8px;
+    width: 30px;
+    height: 40px;
+}
+/* /配置ここまで */
+
+/*白色の文字*/
+.text {
+    color: #FFFFFF !important;
+    font-size: 20px;
+    margin: 10px 35px;
+}
+
+
+#button-container #hintCountButton {
+    margin-left: 5px !important;
+}
+
+.center {
+
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.score-bar {
+    width: 100%;
+    padding-top: 23%
+}
+
+.explanation {
+    font-size: 12px;
+    line-height: 8px;
+}
+
+.return-btn {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF !important;
+    background: #888888;
+}

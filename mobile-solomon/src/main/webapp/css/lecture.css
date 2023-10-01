@@ -1,0 +1,207 @@
+@charset "UTF-8";
+/* マウスがボタンの上に来た時に背景の色を変更する */
+button.btn-blue {
+    color: #FFFFFF !important; /*文字の色*/
+    background: #40e0d0; /*背景の色*/
+}
+
+button.btn-green {
+    color: #FFFFFF !important;
+    background: rgb(34, 173, 34);
+    float: left;
+}
+
+button.btn-yellow {
+    color: #FFFFFF !important;
+    background: rgb(222, 159, 17);
+    float: right;
+}
+
+/*.test div {*/
+/*    color: #CC0000 !important;*/
+/*}*/
+
+button.study:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 40px;
+    margin: -3px 5px 0 0;
+    background: url("../img/pen.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+button.study {
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: large; /*フォントサイズ*/
+    width: 100%; /*ボタンの大きさ*/
+}
+
+button.nigate:before {
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height:  30px;
+    margin: -3px 5px 0 0;
+    background: url("../img/roboAndPen.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+button.nigate {
+    height: 60px;
+    margin-bottom: 20px;
+    font-size: large; /*フォントサイズ*/
+    width: 100%; /*ボタンの大きさ*/
+}
+
+button.mockExam:before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 45px;
+    margin: -3px 5px 0 0;
+    background: url("../img/testAndPen.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+button.mockExam {
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    font-size: large;
+    width: 100%;
+}
+
+button.test:before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: -3px 5px 0 0;
+    background: url("../img/test.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+button.test {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    font-size: large;
+    width: 100%;
+}
+
+button.tested:before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: -3px 5px 0 0;
+    background: url("../img/tested.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+button.tested {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    font-size: large;
+    width: 100%;
+}
+
+.down-arrow {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: -3px 0px 0 0;
+    background: url("../img/down-arrow.png") no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.test, .mockExam div {
+    line-height: 21px;
+}
+.information{
+    position: relative;
+}
+.disabled {
+    pointer-events: auto !important;
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+
+.information div {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 180px;
+    margin: auto;
+    height: 35px;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius: 3px;
+    z-index: -1;
+    transition: .5s;
+    color: #000000 !important;
+    margin: auto;
+    opacity: 0;
+}
+
+.information:hover div, .test-information:hover div {
+    border: dashed 2px #5b8bd0; /* 点線 */
+    margin: auto;
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+/*.information-studyMode {*/
+/*    width: 70%;*/
+/*    word-break: normal;*/
+/*}*/
+.test-information{
+    position: relative;
+}
+.test-information div {
+    position: absolute;
+    background-color: white;
+    word-break: normal;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    margin: auto;
+    height: 50%;
+    font-size: 14px;
+    border-radius: 3px;
+    z-index: -1;
+    transition: .5s;
+    color: #000000 !important;
+    margin: auto;
+    opacity: 0;
+}
+.test-information:hover div{
+    border: dashed 2px #5b8bd0; /* 点線 */
+    margin: auto;
+    z-index: 999;
+    opacity: 1;
+    transform: translateY(-50px);
+}
+
+.tested div {
+    line-height: 40px;
+}
+
+.test, .mockExam div {
+    line-height: 21px;
+}
